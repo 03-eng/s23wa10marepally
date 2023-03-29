@@ -17,7 +17,7 @@ var usersRouter = require('./routes/users');
 
 var mydataRouter = require('./routes/mydata');
 
-var computationRouter = require('./routes/computation');
+var computeRouter = require('./routes/compute');
 
 
 
@@ -55,7 +55,7 @@ app.use('/users', usersRouter);
 
 app.use('/mydata', mydataRouter);
 
-app.use('/computation', computationRouter);
+app.use('/compute', computeRouter);
 
 
 
