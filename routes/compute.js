@@ -2,31 +2,30 @@ var express = require('express');
 
 var router = express.Router();
 
-let x=Math.floor(Math.random());
+let x = Math.floor(Math.random());
 
-let y
+//let y
 
 /* GET home page. */
 
-router.get('/', function(req, res, next) {
+router.get('/', function (req, res, next) {
 
-    if(req.query.x!=undefined){
+    if (req.query.x != undefined) {
 
-        x=req.query.x;
-
-
+        x = req.query.x;
 
 
-    }
 
-    let r=Math.log2(x);
+    }
+    let r = Math.fround(x);
+    let t = Math.random(x);
 
-    let t=Math.cosh(x);
+    let n = Math.round(x);
 
-    let n=Math.floor(x);
 
-   
 
-  res.render('compute', { x:x,log:r, cos:t, floor:n});
+    res.render('compute', { x: x, fround:r, random:t, round:n });
 
 });
+
+module.exports = router;
